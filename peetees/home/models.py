@@ -1,14 +1,23 @@
 from django.db import models
 
 # Create your models here.
-class Product(models.Model ):
-   product_name = models.CharField(max_length=50)
-   mrp = models.IntegerField()
-   id = models.IntegerField(primary_key=True)
-   our_price = models.IntegerField()
+class Vegetable(models.Model ):
+   vegetables_name = models.CharField(max_length=50)
+   vegetables_mrp = models.IntegerField()
+   vegetables_id = models.IntegerField(primary_key=True)
+   vegetables_price = models.IntegerField()
 
    def __str__(self):
-      return f"{self.product_name} \t @Rs {self.our_price }"
+      return f"{self.vegetables_name} \t @Rs {self.vegetables_price }"
+
+class Fruit(models.Model ):
+   fruits_name = models.CharField(max_length=50)
+   fruits_mrp = models.IntegerField()
+   fruits_id = models.IntegerField(primary_key=True)
+   fruits_price = models.IntegerField()
+
+   def __str__(self):
+      return f"{self.fruits_name} \t @Rs {self.fruits_price }"
 
 class Grocery(models.Model ):
    grocery_name = models.CharField(max_length=50)

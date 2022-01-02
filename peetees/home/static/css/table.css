@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content : space-around;
+    align-items : center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table{
+    width : 50%;
+    height : auto;
+}

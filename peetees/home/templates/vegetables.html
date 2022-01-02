@@ -25,11 +25,11 @@
         height : auto;
     }
     </style>
-    <title>Grocery</title>
+    <title>Document Vegetables</title>
 
 </head>
 <body>
-    <h1>Grocery</h1>
+    <h1>Vegetables</h1>
     <table>
         <tr>
             <th>Sl.No</th>
@@ -37,16 +37,16 @@
             <th>MRP</th>
             <th>Our Price</th>
         </tr>
-        {% for g in grocery %}
+        {% for v in vegetables %}
             <tr>
-                <td>{{ g.grocery_id }}</td>
-                <td>{{ g.grocery_name }}</td>
-                <td>{{ g.grocery_mrp }}</td>
-                <td>{{ g.grocery_price }}</td>
+                <td>{{ v.vegetables_id }}</td>
+                <td>{{ v.vegetables_name }}</td>
+                <td>{{ v.vegetables_mrp }}</td>
+                <td>{{ v.vegetables_price }}</td>
             </tr>
             {% endfor %}
-            
-        
+
+
     </table>
 </body>
 </html>
