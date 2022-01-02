@@ -8,6 +8,7 @@ def home(request):
     return render( request,'home.html')
 
 def grocery(request):
-    grocery_list = Grocery.objects.all()
+    grocery_list = {'grocery':Grocery.objects.all()}
+
     return render( request,'grocery.html', grocery_list)
 
