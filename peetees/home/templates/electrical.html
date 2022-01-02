@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Electrical</title>
+</head>
+<body>
+    <h1>Electrical</h1>
+    <table>
+        <tr>
+            <th>Sl.No</th>
+            <th>ITEM</th>
+            <th>MRP</th>
+            <th>Our Price</th>
+        </tr>
+        {% for e in electrical %}
+            <tr>
+                <td>{{ e.electrical_id }}</td>
+                <td>{{ e.electrical_name }}</td>
+                <td>{{ e.electrical_mrp }}</td>
+                <td>{{ e.electrical_price }}</td>
+            </tr>
+            {% endfor %}
+            
+        
+    </table>
+</body>
+</html>

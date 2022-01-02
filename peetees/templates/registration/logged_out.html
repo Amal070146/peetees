@@ -1,0 +1,14 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block breadcrumbs %}<div class="breadcrumbs" style="background-color : #880c0c"><a href="{% url 'admin:index' %}">{% translate 'Home' %}</a></div>{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+ <img src="./static/admin/img/background.jpg" alt="background image" >
+{% block content %}
+
+<p>{% translate "Thanks for spending some quality time with the Web site today." %}</p>
+
+<p><a href="{% url 'admin:index' %}">{% translate 'Log in again' %}</a></p>
+
+{% endblock %}

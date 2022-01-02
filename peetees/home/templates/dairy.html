@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Dairy</title>
+</head>
+<body>
+    <h1>Dairy</h1>
+    <table>
+        <tr>
+            <th>Sl.No</th>
+            <th>ITEM</th>
+            <th>MRP</th>
+            <th>Our Price</th>
+        </tr>
+        {% for d in dairy %}
+            <tr>
+                <td>{{ d.dairy_id }}</td>
+                <td>{{ d.dairy_name }}</td>
+                <td>{{ d.dairy_mrp }}</td>
+                <td>{{ d.dairy_price }}</td>
+            </tr>
+            {% endfor %}
+            
+        
+    </table>
+</body>
+</html>
