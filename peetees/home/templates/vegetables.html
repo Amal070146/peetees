@@ -17,12 +17,32 @@
 
     table, th, td {
         border: 3px solid black;
-        font-weight : 500;
+        font-weight : bolder;
     }
 
     table{
         width : 50%;
         height : auto;
+    }
+    .back-button{
+        background-color : black;
+        color : white;
+        border-radius:30px;
+        text-decoration:none;
+        width : 100px;
+        height : 50px;
+        font-size : 20px;
+        transition : all 0.4s ease 0s;
+
+    }
+    .back-button:hover{
+        border : 0.1cm solid black;
+        background-color : #29a329;
+        color : white;
+        width : 75px;
+        height :37.5px;
+        font-size : 15px;
+        font-weight : bolder;
     }
     </style>
     <title>Document Vegetables</title>
@@ -48,5 +68,11 @@
 
 
     </table>
+    <div style="margin:40px 0px 0px 0px;
+      height: 50px;
+      text-align: center;
+      ">
+    <a href="../#products"><button class ="back-button">Back</button></a>
+  </div>
 </body>
 </html>

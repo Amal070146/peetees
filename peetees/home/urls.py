@@ -3,6 +3,7 @@ from django.urls import path
 from django.conf.urls import include
 from home import views
 
+
 urlpatterns = [
 	path("", views.home),
     path('grocery/', views.grocery),
@@ -11,5 +12,6 @@ urlpatterns = [
 	path('stationary/', views.stationary),
 	path('electrical/', views.electrical),
 	path('fruits/', views.fruits),
-	path('vegetables/', views.vegetables)
+	path('vegetables/', views.vegetables),
+	path('settings/',views.settings)
 ]

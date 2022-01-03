@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Grocery,Bakery,Stationary,Electrical,Dairy,Fruit,Vegetable
+from .templates import *
 
 
 # Create your views here.
@@ -34,3 +35,6 @@ def fruits(request):
 def vegetables(request):
     vegetables_list = {'vegetables':Vegetable.objects.all()}
     return render( request,'vegetables.html', vegetables_list)
+
+def settings(request):
+    return render( request,'admin/setings.html')

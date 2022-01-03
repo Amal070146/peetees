@@ -17,6 +17,64 @@
     {% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% static 'admin/css/responsive_rtl.css' %}">{% endif %}
 {% endblock %}
 {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE">{% endblock %}
+    <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      display: none;
+      height: 100%;
+      width: 25%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: lightseagreen;
+      text-decoration : none;
+    }
+
+    .sidenav {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .closebtn {
+      right: 0px;
+      font-size: 36px;
+      margin-left: 33.33%;
+      margin-right: 33.33%;
+      bottom :0;
+      width : 20px;
+      height : 20px;
+      border-radius : 40%;
+      background-color : green;
+      text-align : center;
+
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
 </head>
 {% load i18n %}
 
@@ -30,7 +88,7 @@
     <!-- Header -->
     <div id="header" style="background-color : #2c0505;">
         <div id="branding" style="
-        font-family: Sail; ;
+        font-family: Sail;
         color: white;
         font-size: 58px;
         line-height: 67px;
@@ -41,27 +99,34 @@
         </div>
         {% block usertools %}
         {% if has_permission %}
-        <div id="user-tools">
-            {% block welcome-msg %}
+        <div >
+
+            <div id="mySidenav" class="sidenav">
+                {% block welcome-msg %}
+                &nbsp
                 {% translate 'Welcome,' %}
-                <strong>{% firstof user.get_short_name user.get_username %}</strong>.
-            {% endblock %}
-            <a href="settings.html">Admin</a>
-            {% block userlinks %}
+                <strong>{% firstof user.get_short_name user.get_username %}</strong>
+                {% endblock %}
+                {% block userlinks %}
                 {% if site_url %}
-                    <a href="{{ site_url }}">{% translate 'View site' %}</a> /
+                <a href="{{ site_url }}">{% translate 'View site' %}</a>
                 {% endif %}
                 {% if user.is_active and user.is_staff %}
                     {% url 'django-admindocs-docroot' as docsroot %}
                     {% if docsroot %}
-                        <a href="{{ docsroot }}">{% translate 'Documentation' %}</a> /
+                        <a href="{{ docsroot }}">{% translate 'Documentation' %}</a>
                     {% endif %}
                 {% endif %}
                 {% if user.has_usable_password %}
-                <a href="{% url 'admin:password_change' %}">{% translate 'Change password' %}</a> /
+                <a href="{% url 'admin:password_change' %}">{% translate 'Change password' %}</a>
                 {% endif %}
                 <a href="{% url 'admin:logout' %}">{% translate 'Log out' %}</a>
-            {% endblock %}
+
+                {% endblock %}
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer;right :0; " onclick="openNav()">&#9776; Admin</span>
+
         </div>
         {% endif %}
         {% endblock %}
@@ -108,5 +173,15 @@
     </div>
 </div>
 <!-- END Container -->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.display = "none";
+    }
+</script>
+
 </body>
 </html>
