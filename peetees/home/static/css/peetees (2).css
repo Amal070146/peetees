@@ -128,16 +128,221 @@ nav {
     text-align: center;
    
 }
+
+
+
+
 .product-images{
+    position: relative;
     cursor: pointer;
     transition: all 0.4s ease 0s;
 }
-.product-images:hover{
-    
-    opacity: 50%;
-    color: transparent;
 
+.hover-grocery::after {
+    position: absolute;
+    top: -302px;
+    left: 6px;
+    width: 250px;
+    height: 250px;
+    padding: 0.5cm;
+    margin:0.3cm;
+    border-radius:50%;
+    background-size:100%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0;
+    background-color:white;
+    color: black;
+    transition: 0.7s ease 0s;
 }
+.hover-grocery:hover::after{
+    content: "GROCERY";
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.hover-bakery::after {
+    position: absolute;
+    top: -302px;
+    left: 6px;
+    width: 250px;
+    height: 250px;
+    padding: 0.5cm;
+    margin:0.3cm;
+    border-radius:50%;
+    background-size:100%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0;
+    background-color:white;
+    color: black;
+    transition: 0.7s ease 0s;
+}
+.hover-bakery:hover::after{
+    content: "BAKERY";
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.hover-stationary::after {
+    position: absolute;
+    top: -302px;
+    left: 6px;
+    width: 250px;
+    height: 250px;
+    padding: 0.5cm;
+    margin:0.3cm;
+    border-radius:50%;
+    background-size:100%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0;
+    background-color:white;
+    color: black;
+    transition: 0.7s ease 0s;
+}
+.hover-stationary:hover::after{
+    content: "STATIONARY";
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.hover-dairy::after {
+    position: absolute;
+    top: -302px;
+    left: 6px;
+    width: 250px;
+    height: 250px;
+    padding: 0.5cm;
+    margin:0.3cm;
+    border-radius:50%;
+    background-size:100%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0;
+    background-color:white;
+    color: black;
+    transition: 0.7s ease 0s;
+}
+.hover-dairy:hover::after{
+    content: "DAIRY";
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.hover-electrical::after {
+    position: absolute;
+    top: -302px;
+    left: 6px;
+    width: 250px;
+    height: 250px;
+    padding: 0.5cm;
+    margin:0.3cm;
+    border-radius:50%;
+    background-size:100%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0;
+    background-color:white;
+    color: black;
+    transition: 0.7s ease 0s;
+}
+.hover-electrical:hover::after{
+    content: "ELECTRICAL";
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.hover-fruits::after {
+    position: absolute;
+    top: -302px;
+    left: 6px;
+    width: 250px;
+    height: 250px;
+    padding: 0.5cm;
+    margin:0.3cm;
+    border-radius:50%;
+    background-size:100%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0;
+    background-color:white;
+    color: black;
+    transition: 0.7s ease 0s;
+}
+.hover-fruits:hover::after{
+    content: "FRUITS";
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.hover-vegetables::after {
+    position: absolute;
+    top: -302px;
+    left: 6px;
+    width: 250px;
+    height: 250px;
+    padding: 0.5cm;
+    margin:0.3cm;
+    border-radius:50%;
+    background-size:100%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0;
+    background-color:white;
+    color: black;
+    transition: 0.7s ease 0s;
+}
+.hover-vegetables:hover::after{
+    content: "VEGETABLES";
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section{
     display: flex;
