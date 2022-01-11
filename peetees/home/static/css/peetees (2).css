@@ -374,13 +374,7 @@ ul li a:hover{
 }
 @media all and (max-width:600px){
     .header-of-the-site{
-        height: 150px;
-    }
-    ul{
-        flex-direction: column;
-    }
-    ul li a {
-        font-size: x-large;
+        height: 100px;
     }
     .welcome-container{
         padding-top: 3.8cm;
@@ -496,4 +490,51 @@ ul li a:hover{
         height: 200px;
         top: -252px;
     }
+}
+
+.nav-container {
+    
+}
+.menu-icon {
+    color: white;
+    margin-right: 20px;
+}
+.menu-icon:hover {
+    cursor: pointer;
+}
+@media (max-width: 800px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        background-color: black;
+        border-radius: 10px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-container > li {
+        margin: 15px;
+    }
+}
+@media (min-width: 801px) {
+    .nav-container {
+        display: flex !important
+    }
+    .menu-icon{
+        display: none;
+    }
+   
+}
+
+.hidden {
+    display: none;
+}
+.nav {
+    position: relative;
+}
+.visible {
+    display: unset;
 }
