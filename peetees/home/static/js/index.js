@@ -4,4 +4,3 @@ const handleClick = (e) => {
     navContainer.classList.toggle("hidden");
 }
 menuBtn.addEventListener('click', handleClick);
-
