@@ -1,144 +1,110 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding:0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Open Sans;
 }
 body{
-     background-image: url(background.jpg);
-     background-attachment: fixed;
-
+    background-image: url(../res/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
-.container{
+.main-container{
     width: 100%;
-    height: 100%;
-    display : flex;
-    flex-direction : column;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    width: 100%;
-    height: 100px;
-    padding: 10px ;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 200;
-}
-
-.shop-name {
-    font-family: Sail; ;
-    color: white;
-    font-size: 58px;
-    line-height: 67px;
-}
-
-.button{
-    display: flex;
-    background-color: rgba(0, 136, 169, 0);
-    border: none;
-    text-decoration: none;
-    margin:none;
-    padding: none;
-    color: white;
-    transition: all 0.4s ease 0s;
-    cursor: pointer;
-    scroll-behavior: smooth;
-}
-.button:hover{
-    color: lightseagreen;
-}
-.welcome-text{
-    height: 68px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 58px;
-    line-height: 68px;
-
-    padding-right: 60px;
-}
-.petees-text{
-    height: 181px;
-
-    padding-left: 60px;
-
-    font-family: Sail;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 105px;
-    line-height: 121px;
-
-    color: #000000;
-}
-.shopimage{
-    height: 404px;
-    width: auto;
-}
-
-.main-page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    padding: 20px;
-    height: 100vh;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    width: 475px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-}
-.welcome-text-container {
-    width: 100%;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-
-.page {
-    padding-top: 100;
-}
-.products{
-    margin: 0%;
-    padding: 0%;
-    scroll-behavior: smooth;
+.header-of-the-site{
     width: 100%;
-    height: 100vh;
-    text-align: center;
-   
+    height: 100px;
+    background-color:black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
 }
-
-
-
-
-.product-images{
-    position: relative;
-    cursor: pointer;
+.shop-name{
+    margin-left: 5%;
+    color: white;
+    font-family: Sail;
+    font-size: 58px;
+}
+ul{
+    width: fit-content;
+    display: flex;
+}
+ul li{
+    width: fit-content;
+    list-style-type: none;
+    text-align: center;
+}
+ul li a{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
     transition: all 0.4s ease 0s;
 }
+ul li a:hover{
+    color: lightseagreen;
+}
+.welcome-container{
+    margin-top: 2.6cm;
+    width: 100%;
+    height: 100vh;
+    padding-left:5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.welcome-text-container{
+    position: relative;
+    width: 500px;
+    height: 210px;
+}
+.welcome-to{
+    font-family: roboto;
+    font-size: 52px;
+    position: absolute;
+    top:0%;
+    left: 0%;
+}
+.peetees{
+    font-family: sail;
+    font-size: 104px;
+    font-weight: 100;
+    position:absolute;
+    top: 50%;
+    left: 90px;
+}
+.shop_image{
+    width: 400px;
+    height:400px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+.links-container{
+    padding-top:2.5cm ;
+    padding-bottom: 2.5cm;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
 
-.hover-grocery::after {
+.links-images{
+    width: 300px;
+    height: 300px;
+    padding: 0.5cm;
+    margin: 0.3cm;
+    border: 0.2cm solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.links{
+    position: relative;
+}
+.grocery-hover::after {
     position: absolute;
     top: -302px;
     left: 6px;
@@ -159,13 +125,12 @@ nav {
     color: black;
     transition: 0.7s ease 0s;
 }
-.hover-grocery:hover::after{
+.grocery-hover:hover::after{
     content: "GROCERY";
     text-decoration: none;
     opacity: 0.75;
 }
-
-.hover-bakery::after {
+.bakery-hover::after {
     position: absolute;
     top: -302px;
     left: 6px;
@@ -181,18 +146,17 @@ nav {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    opacity: 0;
+    opacity: 0%;
     background-color:white;
     color: black;
     transition: 0.7s ease 0s;
 }
-.hover-bakery:hover::after{
+.bakery-hover:hover::after{
     content: "BAKERY";
     text-decoration: none;
     opacity: 0.75;
 }
-
-.hover-stationary::after {
+.stationary-hover::after {
     position: absolute;
     top: -302px;
     left: 6px;
@@ -208,18 +172,17 @@ nav {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    opacity: 0;
+    opacity: 0%;
     background-color:white;
     color: black;
     transition: 0.7s ease 0s;
 }
-.hover-stationary:hover::after{
+.stationary-hover:hover::after{
     content: "STATIONARY";
     text-decoration: none;
     opacity: 0.75;
 }
-
-.hover-dairy::after {
+.dairy-hover::after {
     position: absolute;
     top: -302px;
     left: 6px;
@@ -235,18 +198,17 @@ nav {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    opacity: 0;
+    opacity: 0%;
     background-color:white;
     color: black;
     transition: 0.7s ease 0s;
 }
-.hover-dairy:hover::after{
+.dairy-hover:hover::after{
     content: "DAIRY";
     text-decoration: none;
     opacity: 0.75;
 }
-
-.hover-electrical::after {
+.electrical-hover::after {
     position: absolute;
     top: -302px;
     left: 6px;
@@ -262,18 +224,17 @@ nav {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    opacity: 0;
+    opacity: 0%;
     background-color:white;
     color: black;
     transition: 0.7s ease 0s;
 }
-.hover-electrical:hover::after{
+.electrical-hover:hover::after{
     content: "ELECTRICAL";
     text-decoration: none;
     opacity: 0.75;
 }
-
-.hover-fruits::after {
+.fruits-hover::after {
     position: absolute;
     top: -302px;
     left: 6px;
@@ -289,18 +250,17 @@ nav {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    opacity: 0;
+    opacity: 0%;
     background-color:white;
     color: black;
     transition: 0.7s ease 0s;
 }
-.hover-fruits:hover::after{
+.fruits-hover:hover::after{
     content: "FRUITS";
     text-decoration: none;
     opacity: 0.75;
 }
-
-.hover-vegetables::after {
+.vegetables-hover::after {
     position: absolute;
     top: -302px;
     left: 6px;
@@ -316,63 +276,224 @@ nav {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    opacity: 0;
+    opacity: 0%;
     background-color:white;
     color: black;
     transition: 0.7s ease 0s;
 }
-.hover-vegetables:hover::after{
+.vegetables-hover:hover::after{
     content: "VEGETABLES";
     text-decoration: none;
     opacity: 0.75;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section{
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo-container{
+    padding: 10px;
+    height:100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    height: 100vh;
-    scroll-snap-align: center;
+    border-right: 0.05cm solid yellow;
 }
-
-.footer{
-    margin-top:100px;
-    bottom :0px;
-    position : static;
-    display:flex;
-    z-index : 200;
-    height : 250px;
-    width :100%;
-    background-color:black;
-    color :white;
+.contacts-container{
+    padding: 10px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    border-right: 0.05cm solid yellow;
 }
-
-p{
-    margin : 0.5cm;
-    font-size:larger;
-    text-decoration:none;
+.contacts-container p {
+    margin-bottom: 10px;
 }
+.contacts-container p a {
+    text-decoration: none;
+    color: white;
+}
+.about-container{
+    padding: 10px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+ }
+@media all and (max-width:1100px){
+    .welcome-text-container{
+        width: 400px;
+        height: 200px;
+    }
+    .welcome-to{
+        font-size: 40px;
+    }
+    .peetees{
+        font-size: 80px;
+    }
+    .shop_image{
+        width: 350px;
+        height:350px;
+    }
+    
+}
+@media all and (max-width:900px){
+    .welcome-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .welcome-text-container{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    .shop_image{
+        width: 375px;
+        height:375px;
+    }
+}
+@media all and (max-width:700px){
+    .shop-name{
+        font-size: 40px;
+    }
+    .contacts-container{
+        font-size: large;
+    }
 
-p a{
-    text-decoration:none;
+}
+@media all and (max-width:600px){
+    .header-of-the-site{
+        height: 150px;
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul li a {
+        font-size: x-large;
+    }
+    .welcome-container{
+        padding-top: 3.8cm;
+    }
+    .links-container{
+        padding-top: 3.8cm;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column; 
+        height: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .logo-container{
+        height: fit-content;
+        border-bottom: 0.05cm solid yellow;
+        border-right: none;
+    }
+    .contacts-container{
+        height: fit-content;
+        border-bottom: 0.05cm solid yellow;
+        border-right: none;
+    }
+    .about-container{
+        height: fit-content;
+    }
+}
+@media all and (max-width:500px){
+    .welcome-container{
+        height: fit-content;
+    }
+    .welcome-text-container{
+        margin-bottom: 0.5cm;
+        height: 150px;
+    }
+    .welcome-to{
+        font-size: 30px;
+    }
+    .peetees{
+        font-size: 60px;
+    }
+    .shop_image{
+        width: 300px;
+        height:300px;
+    }
+
+}
+@media all and (max-width:400px){
+    .welcome-text-container{
+        position: relative;
+        height: fit-content;
+    }
+    .welcome-to{
+        position: static;
+    }
+    .peetees{
+        position: static;
+    }
+}
+@media all and (max-width:280px){
+    .header-of-the-site{
+        flex-direction: column;
+    }
+    .shop-name{
+        margin-left:0px;
+        font-size: 30px;
+    }
+    ul li a {
+        font-size: small;
+        margin: 0px;
+    }
+    .shop_image{
+        width: 250px;
+        height: 250px;
+    }
+    .links-images{
+        width: 250px;
+        height: 250px;
+    }
+    .grocery-hover::after{
+        width: 200px;
+        height: 200px;
+        top: -252px;
+    }
+    .bakery-hover::after{
+        width: 200px;
+        height: 200px;
+        top: -252px;
+    }
+    .stationary-hover::after{
+        width: 200px;
+        height: 200px;
+        top: -252px;
+    }
+    .dairy-hover::after{
+        width: 200px;
+        height: 200px;
+        top: -252px;
+    }
+    .electrical-hover::after{
+        width: 200px;
+        height: 200px;
+        top: -252px;
+    }
+    .fruits-hover::after{
+        width: 200px;
+        height: 200px;
+        top: -252px;
+    }
+    .vegetables-hover::after{
+        width: 200px;
+        height: 200px;
+        top: -252px;
+    }
 }

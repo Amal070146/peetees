@@ -1,65 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="static/res/peetees logo.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/peetees (2).css">
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PeeTees</title>
 </head>
-<body style="background-image : url('static/res/background.jpg')">
-    <div id="home"class="container">
-        <header class="header">
-            <h1 class="shop-name"><span class="shop-name" style="color:yellow;"> Pee</span>Tees</h1>
+<body>
+    <div class="main-container">
+        <header class="header-of-the-site">
+            <h1 class="shop-name">PeeTees</h1>
             <nav>
-                <a href="#home" class="button">Home</a>
-                <a href="#products" class="button">Products</a>
-                <a href="#contact" class="button">Contact us</a>
-                <a href="admin/" class="button">Admin</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact_us">Contact us</a></li>
+                    <li><a href="admin/">Admin</a></li>
+                </ul>
             </nav>
         </header>
-        <section>
-            <div class="main-page page">
-                <div class="welcome-text-container">
-                    <h1 class="welcome-text">Welcome to</h1>
-                    <h1 class="petees-text">PeeTees</h1>
-                </div>
-                <div class="image-container">
-                    <img src="static/res/store1.jpg" alt="image of a shop" class="shopimage">
-                </div>
+        <div class="welcome-container" id="home">
+            <div class="welcome-text-container">
+                <h1 class="welcome-to">Welcome to</h1>
+                <h1 class="peetees">PeeTees</h1>
             </div>
-        </section>
-        <section>
-            <div class="products"id="products">
-                <h1 style="font-size: 60px;font-weight: 500px;">Products</h1>
-                <a href="grocery"class="product-images hover-grocery"><img src="static/res/grocery.jpg" alt="grocery"style="width: 300px;height: 300px;background-size : 100%;padding: 0.5cm;margin:0.3cm;px;border:0.2cm solid black;border-radius:50%"></a>
-                <a href="bakery"class="product-images hover-bakery"><img src="static/res/bakery.jpg" alt="bakery"style="width: 300px;height: 300px;background-size : 100%;padding: 0.5cm;margin:0.3cm;px;border:0.2cm solid black;border-radius:50%"></a>
-                <a href="stationary"class="product-images hover-stationary"><img src="static/res/stationary.jpg" alt="stationary"style="width: 300px;height: 300px;background-size : 100%;padding: 0.5cm;margin:0.3cm;px;border:0.2cm solid black;border-radius:50%"></a>
-                <a href="dairy"class="product-images hover-dairy"><img src="static/res/dairy.jpg" alt="dairy"style="width: 300px;height: 300px;background-size : 100%;padding: 0.5cm;margin:0.3cm;px;border:0.2cm solid black;border-radius:50%"></a>
-                <a href="electrical"class="product-images hover-electrical"><img src="static/res/electrical.jpg" alt="electrical"style="width: 300px;height: 300px;background-size : 100%;padding: 0.5cm;margin:0.3cm;px;border:0.2cm solid black;border-radius:50%"></a>
-                <a href="fruits"class="product-images hover-fruits"><img src="static/res/fruits.jpg" alt="fruits"style="width: 300px;height: 300px;background-size : 100%;padding: 0.5cm;margin:0.3cm;px;border:0.2cm solid black;border-radius:50%"></a>
-                <a href="vegetables"class="product-images hover-vegetables"><img src="static/res/vegetables.jpg" alt="vegetables"style="width: 300px;height: 300px;background-size : 100%;padding: 0.5cm;margin:0.3cm;px;border:0.2cm solid black;border-radius:50%"></a>
+            <div class="welcome-image-container">
+                <img src="static/res/store1.jpg" alt="An image of a shop" class="shop_image">
             </div>
-        </section>
-        <div>
-        <footer class="footer" id="contact">
-            <div style="background-color:black; width :33.33% ;height : 250px; text-align:center; display:flex; flex-direction:column;justify-content:center;border-right:0.1cm solid yellow;">
-                 <h1 class="shop-name" style="color:yellow;">PeeTees</h1>
+        </div>
+        <div class="links-container" id="products">
+            <h1 style="font-size: 68px; font-weight: 100; font-family: sail; margin-bottom: 20px;">Products</h1>
+            <a href="grocery" class="links grocery-hover"><img src="static/res/grocery.jpg" alt="Grocery" class="links-images"></a>
+            <a href="bakery" class="links bakery-hover"><img src="static/res/bakery.jpg" alt="Bakery" class="links-images"></a>
+            <a href="stationary" class="links stationary-hover"><img src="static/res/stationary.jpg" alt="Stationary" class="links-images"></a>
+            <a href="dairy" class="links dairy-hover"><img src="static/res/dairy.jpg" alt="Dairy" class="links-images"></a>
+            <a href="electrical" class="links electrical-hover"><img src="static/res/electrical.jpg" alt="Electrical" class="links-images"></a>
+            <a href="fruits" class="links fruits-hover"><img src="static/res/fruits.jpg" alt="Fruits" class="links-images"></a>
+            <a href="vegetables" class="links vegetables-hover"><img src="static/res/vegetables.jpg" alt="Vegetables" class="links-images"></a>
+        </div>
+        <div class="footer" id="contact_us">
+            <div class="logo-container">
+                <h1 class="shop-name">PeeTees</h1>
             </div>
-            <div style="background-color:black; width :33.33% ;height : 250px;text-align:center; display:flex; flex-direction:column;justify-content:center;border-right:0.1cm solid yellow;">
-                <p>East Combera,Irinjalakuda <span></span>Pin code:680121</p>
-                <p>+91 9447528003</p>
-                <p ><a href="ptjose2020@gmail.com" style="color:white;" >ptjose2020@gmail.com</a></p>
+            <div class="contacts-container">
+                <p>East Combara,Irinjalakuda</p>
+                <p>Pin code : 680121</p>
+                <p>+91 9995569247</p>
+                <p><a href="ptjose2020@gmail.com">ptjose2020@gmail.com</a></p>
             </div>
-            <div style="background-color:black; width :33.33% ;height : 250px;text-align:center; display:flex; flex-direction:column;justify-content:center; font-size:larger;padding : 10px;">
-                <span style="text-decoration:underline;text-decoration-color:yellow;">About the Shop</span>
-                        <p>Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.</p>
+            <div class="about-container">
+                <h3>About The Shop</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis. Eum, nihil. Voluptates aliquid eaque neque consequatur! Ducimus dolor rerum cupiditate quaerat officia aperiam! Quisquam cupiditate voluptatum mollitia nesciunt labore?</p>
 
             </div>
-        </footer>
         </div>
     </div>
+    
 </body>
 </html>
