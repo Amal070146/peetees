@@ -26,7 +26,7 @@ SECRET_KEY = 'django-secure-1rxt@asdasfa_jwSnbL!j8j3^UGDLRhRSnbL!j8j3^UG'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["peetees.co.in","www.peetees.co.in"]
+ALLOWED_HOSTS = ["peetees.co.in","www.peetees.co.in","127.0.0.1"]
 CSRF_TRUSTED_ORIGINS =["https://peetees.co.in", "https://www.peetees.co.in"]
 
 
